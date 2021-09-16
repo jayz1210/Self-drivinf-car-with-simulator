@@ -389,7 +389,7 @@ We follow the five convolutional layers with three fully connected layers, leadi
 
 The accuracy was model is shown by graph :-
 
-#### 4.2.4 Implementation
+### 4.2.4 Implementation
 
 First of all, the model is trained to generate the model.h5 file which contains the code to train the model with the help of the following command. Using the Unity Simulator, the car can be tested to drive autonomously in the Autonomous Mode of the Simulator by executing the following command
 
@@ -428,10 +428,10 @@ First of all, the model is trained to generate the model.h5 file which contains 
 
 
 
-#### 4.2.5. Results of behaviour Cloning.
+### 4.2.5. Results of behaviour Cloning.
 The car is able to steer successfully across the track in both hilly as well as park tracks with a validation loss equal to 0.0326. The pipeline is successful in driving the car around the track and preventing it from driving off the roads. In this paper,wefollowed the approach of recovery driving i.e. driving across one of the lane markings either left or right while collecting data. Due to this, the model is successful in regions where there are no lane markings on one side of the road. Sharp turns are made easy to navigate and hence, safe driving behavior is established by the self-driving car in the simulator.
 
-### 4.3 IMPLEMENTATION OF OBJECT DETECTION ON CARLA
+## 4.3 IMPLEMENTATION OF OBJECT DETECTION ON CARLA
 4.3.1 Traffic simulation
 In order for the traffic to feel real in our virtual environment we need to have different variety of vehicle along with it they should be autopilot and should be spawned at different location the map
 
@@ -487,7 +487,7 @@ try:
    # use sensor to show the ttached acamera view 
     sensor.listen(lambda data: process_img(data))
     time.sleep(50)
-4.3.2 Install the Model And Label:-
+### 4.3.2 Install the Model And Label:-
 First we need to download the model which we need to use in order to detect object for this purpose we have used Ssd_mobilenet_v2_320x320_coco17_tpu-8'  .here ssd mobile net is our model and coco will provide our data set for testing purposes .
 Code for model and label download:-
 #For Model
