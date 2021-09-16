@@ -1,62 +1,7 @@
 # Self-drivinf-car-with-simulator
-## INDEX
-Acknowledgment
-ABSTRACT
-1.0  INTRODUCTION
-2 LITERATURE REVIEW
-2.1  Python
-2.2 Tensorflow
-2.3 Numpy
-2.4  Keras
-2.5 Transfer Learning
-2.6  Neural Network
-2.7  CNN(Convolutional neural network)
-2.9 Object Detection
-2.10  TensorFlow Object Detection API
-3.0 SYSTEM REQUIREMENTS STUDY
-3.1 HARDWARE AND SOFTWARE REQUIREMENTS
-3.2 CONSTRAINT
-4.0 Implementation:
-4.1 Vehicle and Person Detection
-4.1.1 Data
-4.1.2 Vehicle detection
-4.1.3Model
-4.1.4 Model.summary
-4.1.5 Training
-3.1.6 Running the Model
-4.1.6 Visualizing Intermediate Representations
-4.1.6 Output:
-4.2 BEHAVIOR CLONING
-4.2.1 Approach
-4.2.2 Understanding Data
-4.2.3 Data preprocessing Before Training :
-4.2.3 Network Architecture
-4.2.4 Implementation
-4.2.5. Results of behaviour Cloning.
-4.3 IMPLEMENTATION OF OBJECT DETECTION ON CARLA
-4.3.1 Traffic simulation
-4.3.2 Install the Model And Label:-
-4.3.3  Import the Required Libraries and Model:-
-4.3.4  Loading label map:-
-4.3.5  Test on Carla Simulator:
-6.0 CONCLUSION
-7.0 REFRRENCE
 
-Acknowledgment
 
-This project has played a significant role in learning industrial practices and working with the best technologies. However, there have been many who have played direct and indirect roles in this wonderful journey.
-
-First of all, we would like to thank my parents who provided immense love and care in the Covid-19 situation. They took care of our health and made sure that we always gave our best in whatever we do.
-
-Finally, we would like to thank our guide  Prof. Maharishi K. Trivedi for helping in every way possible. Without him, this project wouldn’t have been completed. He provided necessary support whenever required and made sure that progress did not stop. Also, we would like to thank U.V.P.C.E and all other staff members who have helped directly and indirectly in managing all the procedures and making sure that we don’t miss out on any necessary information.
-ABSTRACT
-
-In the modern era, vehicles are focused to be automated to give human drivers relaxed driving. In the ﬁeld of automobile various aspects have been considered which makes a vehicle automated. Google, the biggest network has started working on self-driving cars in 2010 and still developing new changes to give a whole new level to automated vehicles
-
-Self Driving Cars are very common these days. With various tech. giants working in this field of research, autonomous mobility i.e. self-driving cars are no longer the talks of fiction. Various driving support systems are now available in the market like lane assist, parking assist, etc. 
-
-The cameras mounted on the front of the car i.e. on the hood of the car, are being used by various self-driving car engineers to implement autonomous driving . Some functions include Road lane recognition, traffic signs detection, object or vehicle detection, and so on. The list is never-ending. In this project, various front-facing cameras (center, left, and right) are used to improve the driving behavior of self-driving cars, and the model is trained in such a way that the car never goes out of the track despite the road curvatures or sharp turns.
-1.0  INTRODUCTION
+## 1.0  INTRODUCTION
 
 Self-driving cars, also referred to as autonomous cars, are cars that are capable of driving with little to no human input.
 Various AI algorithms, mainly Computer Vision, are used to process the information from the sensors. 
@@ -66,7 +11,7 @@ Be at the forefront of the autonomous driving industry. With market researchers 
 This project satisfies the requirements of the Vehicle Detection project. The primary objective is to detect other vehicles. and detection in real-time with the help of the Carla simulator 
 The 2nd part of this project is behaviour cloning in which we use the UNity Self-driving car simulator and use the concept behaviour cloning in which we were able to drive a car on road autonomously.
 We chose to use convolutional neural networks to detect lane lines and cars, rather than the gradient and SVM-based approaches recommended for these projects. we annotated training images with the correct answers by adding extra layers to indicate which parts of the picture were part of lane lines or cars, then trained convolutional neural networks to produce such image masks for other images from the video. The process of curating training data and training convolutional neural networks will be discussed further later in this document.
-2 LITERATURE REVIEW
+## 2 LITERATURE REVIEW
 2.1  Python
 Python is a popular programming language. It was created by Guido van Rossum, and released in 1991.
 It is used for:
@@ -152,7 +97,7 @@ SSD operates on feature maps to detect the location of bounding boxes. Remember 
 A standard convolution both filters and combines inputs into a new set of outputs in one step. The depthwise separable convolution splits this into two layers – a separate layer for filtering and a separate layer for combining. This factorization has the effect of drastically reducing computation and model size.
 
 
-3.0 SYSTEM REQUIREMENTS STUDY
+## 3.0 SYSTEM REQUIREMENTS STUDY
 3.1 HARDWARE AND SOFTWARE REQUIREMENTS 
 System requirement for the Project:
 Common requirements:
@@ -180,7 +125,7 @@ CPU	GPU 	TPU
 Intel zenon processor with12 gb RAM	Upto Tesla k80 with 12 GB of VRAM	Cloud TPU with 180 tera flop computationm of Xenon
 
 
-4.0 Implementation: 
+## 4.0 Implementation: 
  Implementation Environment:-
 1.The training of the model and preprocessing has been done on google colab which help to reduce strain on or work by exponentially. They provide us with GPU and TPU for training and testing.
 The section 4.1 shows how we initially train the project model on google colab and the basic function behind it.
@@ -595,9 +540,9 @@ while True:
 
 
 
-6.0 CONCLUSION
+## 6.0 CONCLUSION
 From this project we were able to create basic models using neural network and deep learning for identifying different objects and differentiating between humans and cars.Then we used pretrained model for object detection using Transfer learning concept and it gives proper result thereafter for steering and throttle control has be done on unity simulator which gives proper result at low speed (ie 15MPH).
-7.0 REFRRENCE 
+## 7.0 REFRRENCE 
 ●Deep Learning, 2016.
 ●Neural Network Methods in Natural Language Processing, 2017.
 ●Transfer Learning – Machine Learning’s Next Frontier, 2017.
